@@ -1,0 +1,24 @@
+{
+  "name": "quickfuel-backend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Supabase schema, RLS, scheduled jobs, and edge functions for QuickFuel",
+  "scripts": {
+    "link": "supabase link",
+    "db:push": "supabase db push",
+    "functions:serve": "supabase functions serve",
+    "deploy": "npm run deploy:create-user && npm run deploy:create-station && npm run deploy:reserve && npm run deploy:mock-payment && npm run deploy:verify-code && npm run deploy:dispense-authorise && npm run deploy:dispense-complete && npm run deploy:request-refund && npm run deploy:approve-refund",
+    "deploy:create-user": "supabase functions deploy create-user",
+    "deploy:create-station": "supabase functions deploy create-station",
+    "deploy:reserve": "supabase functions deploy reserve",
+    "deploy:mock-payment": "supabase functions deploy mock-payment",
+    "deploy:verify-code": "supabase functions deploy verify-code",
+    "deploy:dispense-authorise": "supabase functions deploy dispense-authorise",
+    "deploy:dispense-complete": "supabase functions deploy dispense-complete",
+    "deploy:request-refund": "supabase functions deploy request-refund",
+    "deploy:approve-refund": "supabase functions deploy approve-refund"
+  },
+  "devDependencies": {
+    "supabase": "^1.200.3"
+  }
+}

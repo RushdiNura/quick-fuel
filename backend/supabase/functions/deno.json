@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window"],
+    "strict": true
+  },
+  "lint": {
+    "rules": { "tags": ["recommended"] }
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "lineWidth": 100
+  }
+}

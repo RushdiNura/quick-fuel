@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Never commit secret keys or credentials
+*.pem
+*.key
+service-account*.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Testing and coverage
+coverage/
+.nyc_output/
+
+# Supabase local temporary files
+.supabase/
+supabase/.temp/
+
+# Build output
+dist/
+build/
+.tmp/
+temp/
+
+# Cache
+.cache/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local database backups
+*.dump
+*.sql.gz
+*.backup
+
+# Temporary files
+tmp/
